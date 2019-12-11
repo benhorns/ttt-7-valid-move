@@ -1,4 +1,5 @@
 require "pry"
+binding.pry
 def valid_move?(board, index)
   if position_taken?(board, index)
     false
