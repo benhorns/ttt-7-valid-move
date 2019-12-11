@@ -1,11 +1,11 @@
 require "pry"
-def valid_move?(board, index)
+def valid_move?(board,index)
 
 index.between?(0, 8) && !position_taken? (board,index)
 
 end
 
-def position_taken? (board, index)
+def position_taken? (board,index)
 board[0] == " " || board[0]=="" || board==nil
 board[0]== "X" || board [0]=="O"
 end
