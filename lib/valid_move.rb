@@ -7,8 +7,11 @@ end
 
 def position_taken? (board,index)
 binding.pry
-board[0] == " " || board[0]=="" || board==nil
-board[0]== "X" || board [0]=="O"
+if board[index] == " "
+  true
+else board[index] != ""
+  false
+end
 end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
